@@ -2,17 +2,13 @@
   <ion-page>
     <ion-header>
       <ion-toolbar>
-        <ion-title>Tab 1</ion-title>
+        <ion-buttons slot:start>
+          <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>Page1</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
-      <ion-header collapse="condense">
-        <ion-toolbar>
-          <ion-title size="large">Tab 1</ion-title>
-        </ion-toolbar>
-      </ion-header>
-
-      <ExploreContainer name="Tab 1 page" />
       <ion-button @click="redirect">Redirect TO Page2</ion-button>
     </ion-content>
   </ion-page>
@@ -26,12 +22,11 @@ import {
   IonTitle,
   IonContent,
 } from "@ionic/vue";
-import ExploreContainer from "@/components/ExploreContainer.vue";
 import { useRouter } from "vue-router";
+
 export default {
   name: "Tab1",
   components: {
-    ExploreContainer,
     IonHeader,
     IonToolbar,
     IonTitle,
@@ -41,7 +36,7 @@ export default {
   setup() {
     const router = useRouter();
     const redirect = () => {
-      router.push({ name: "page1" });
+      router.push({ name: "page2" });
     };
 
     return {
