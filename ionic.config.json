@@ -1,0 +1,7 @@
+{
+  "name": "router-demo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
