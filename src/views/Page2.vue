@@ -9,7 +9,9 @@
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
-      Page ,Try To Client Left Top Back Button
+      Page2 ,
+      <p>Try To Click Left Top Back Button To Page1</p>
+      <p>Then Click Page1 Left Top Back Button To Tabs</p>
     </ion-content>
   </ion-page>
 </template>

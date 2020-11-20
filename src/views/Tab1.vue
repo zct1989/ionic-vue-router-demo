@@ -13,7 +13,7 @@
       </ion-header>
 
       <ExploreContainer name="Tab 1 page" />
-      <ion-button @click="redirect">Redirect TO Page2</ion-button>
+      <ion-button @click="redirect">Redirect TO Page1</ion-button>
     </ion-content>
   </ion-page>
 </template>
